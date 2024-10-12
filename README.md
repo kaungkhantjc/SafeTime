@@ -208,7 +208,7 @@ Please perform a quick search to check if there are already existing issues or p
 
 ## License
 
-Safe Text is released under the Apache 2.0 license.
+Safe Time is released under the Apache 2.0 license.
 
     Copyright 2024 Safe Text Contributors
 
