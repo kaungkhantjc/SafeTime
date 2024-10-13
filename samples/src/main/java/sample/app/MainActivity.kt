@@ -26,11 +26,11 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val safeTime = (application as App).safeTime
+        val safeTime = (application as? App)?.safeTime
 
         // get current time from cache or sync time from NTP servers if it is invalid
         binding.btnNowOrSync.setOnClickListener {
-            safeTimeJob = safeTime.nowOrSync(object : SafeTimeListener {
+            safeTimeJob = safeTime?.nowOrSync(object : SafeTimeListener {
                 override fun onSuccessful(safeTimeInfo: SafeTimeInfo) {
                     val correctTimestamp = safeTimeInfo.timestamp
                     val readableDate = formatDate(correctTimestamp)
@@ -45,7 +45,7 @@ class MainActivity : Activity() {
 
         // sync time from NTP servers immediately
         binding.btnSync.setOnClickListener {
-            safeTimeJob = safeTime.sync(safeTimeListener)
+            safeTimeJob = safeTime?.sync(safeTimeListener)
         }
 
     }

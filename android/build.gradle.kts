@@ -13,7 +13,7 @@ mavenPublishing {
         publishJavadocJar = true,
     ))
 
-    coordinates("io.github.kaungkhantjc", "safeTime-android", "1.0.0")
+    coordinates("io.github.kaungkhantjc", "safeTime-android", "1.0.1")
     pom {
         name.set("SafeTime-android")
     }

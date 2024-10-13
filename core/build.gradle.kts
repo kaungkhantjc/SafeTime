@@ -10,7 +10,7 @@ plugins {
 
 
 mavenPublishing {
-    coordinates("io.github.kaungkhantjc", "safeTime-core", "1.0.0")
+    coordinates("io.github.kaungkhantjc", "safeTime-core", "1.0.1")
     configure(
         KotlinJvm(
             javadocJar = JavadocJar.Dokka("dokkaHtml"),

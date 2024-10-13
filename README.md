@@ -26,16 +26,16 @@ If users manually adjust their clocks, `System.currentTimeMillis()` may reflect 
 For Android using Gradle
 
 ```gradle
-implementation("io.github.kaungkhantjc:safeTime-android:1.0.0")
+implementation("io.github.kaungkhantjc:safeTime-android:1.0.1")
 ```
 
 For JVM-based multiplatform projects using Gradle
 
 ```gradle
-implementation("io.github.kaungkhantjc:safeTime-core:1.0.0")
+implementation("io.github.kaungkhantjc:safeTime-core:1.0.1")
 ```
 
-[SafeTime jar downloads](https://repo1.maven.org/maven2/io/github/kaungkhantjc/safeTime-core/1.0.0) are available from [Maven Central](https://central.sonatype.com/artifact/io.github.kaungkhantjc/safeTime-core/overview).
+[SafeTime jar downloads](https://repo1.maven.org/maven2/io/github/kaungkhantjc/safeTime-core/1.0.1) are available from [Maven Central](https://central.sonatype.com/artifact/io.github.kaungkhantjc/safeTime-core/overview).
 
 ## Usage
 
@@ -62,7 +62,7 @@ class App : Application() {
 Then we can use like this. We can also use [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) to inject SafeTime instance.
 
 ```kotlin
-val safeTime = (application as App).safeTime
+val safeTime = (application as? App)?.safeTime
 ```
 
 ### SafeTime instance functions

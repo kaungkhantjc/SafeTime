@@ -191,7 +191,7 @@ internal class RealSafeTime(
         val rootDispersion = message.rootDispersion
         if (rootDispersion > options.rootDispersionMax) {
             throw SafeTimeException(
-                "Invalid response from NTP server. %s violation. %f [actual] > %f [expected]",
+                "Invalid response from NTP server. %s violation. %d [actual] > %d [expected]",
                 "root_dispersion",
                 rootDispersion,
                 options.rootDispersionMax
@@ -223,7 +223,7 @@ internal class RealSafeTime(
 
         if (delay >= serverResponseDelayMaxValue) {
             throw SafeTimeException(
-                "%s too large for comfort %d [actual] >= %f [expected]",
+                "%s too large for comfort %d [actual] >= %d [expected]",
                 "server_response_delay",
                 delay.toInt(),
                 serverResponseDelayMaxValue.toInt()
