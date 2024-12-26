@@ -210,7 +210,7 @@ Please perform a quick search to check if there are already existing issues or p
 
 Safe Time is released under the Apache 2.0 license.
 
-    Copyright 2024 Safe Text Contributors
+    Copyright 2024 Safe Time Contributors
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
